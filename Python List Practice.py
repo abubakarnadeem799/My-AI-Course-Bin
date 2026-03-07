@@ -6,3 +6,6 @@ print(type(Customer_List))
 
 Customer_List.append("Ayotollah ALi Khaninae")
 print(Customer_List)
+
+Customer_List.insert(1, "Tahran")
+print(Customer_List)
