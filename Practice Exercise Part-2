@@ -1,0 +1,75 @@
+# Q-11 
+# Create an integer variable age and a float variable height. Print their types
+
+"""Age = 25
+Height = 5.7
+print(type(Age))
+print(type(Height))"""
+
+# Q-12 
+# Store the value 3 + 4j in a variable. Print the variable and its type.
+
+"""complexvar = 3+4j
+print(complexvar)
+print(type(complexvar))
+
+print(complexvar.real)
+print(complexvar.imag)"""
+
+# Q-13
+# Create a boolean variable is_python_fun and set it to True.
+
+
+
+
+
+
+
+# Q-14 
+# Method 1: Assign three different values to three variables in a single line.
+
+
+
+
+
+# Q-15 
+# Method 2: Assign the same value to three different variables in a single line.
+
+
+
+
+
+# Q-16 
+# Take a numeric input from a user and convert it to a float.
+
+
+
+
+
+
+# Q-17 
+# Take a string input "100" and convert it to an int.
+
+
+
+
+
+# Q-18 
+# Create a variable with a complex number and print only its real part.
+
+
+
+
+
+
+
+# Q-19 
+# Define a string variable containing a paragraph and print its length.
+
+
+
+
+
+
+# Q-20 
+# Swap the values of two variables a and b without using a third variable.

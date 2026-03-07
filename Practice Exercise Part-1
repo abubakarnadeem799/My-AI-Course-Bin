@@ -1,0 +1,58 @@
+#Write a program to print "Hello, World!" and your name on two separate lines
+
+"""print("Hello World!")
+print("Muhammad Abubakar Nadeem")"""
+
+"""print("Hello world!")
+Name = input("Enter Your First name: ")
+Name2 = input ("Enter your Last name: ")
+print("Enter Your First name", Name )
+print("Enter Your Last Name", Name2)"""
+
+#Ask the user for their favorite color using input() and print "Your favorite color is [color]".
+
+"""color = input("Enter your favourite color: ")
+print("Your favourite color is", color )"""
+
+#Use a single print() statement to display three different words separated by a hyphen (-).
+
+"""print("Welcome","To", "Lahore" , sep="-")"""
+#Prompt the user for their birth year and print their age (assume the current year is 2026).
+
+"""birth_year = int(input ("Enter your birth year: "))
+age = 2026 - birth_year
+print("Your is age", age)"""
+
+#Print the result of 5 + 5 such that the output is: The sum of 5 and 5 is 10
+"""sum = 5 + 5
+print("The sum of 5 and 5 is", sum)"""
+
+#Use the end parameter in print() to join two separate print statements with a space.
+
+"""print("Hello,", end=" ")
+print("World!")"""
+
+#Write a program that takes two strings from the user and prints them joined together
+ 
+"""str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+
+Joint = str1 + str2
+print("Joined string:", Joint)"""
+
+#Create a greeting that takes a user's name and prints "Welcome, [Name]!" in all uppercase
+""""name = input("Enter your name: ")
+greeting = "Welcome, " + name + "!"
+print(greeting.upper())"""
+
+#Ask for a user's city and country, then print them in the format: "City, Country"
+"""city = input("Enter your city: ")
+country = input("Enter your country: ")
+
+print(city + ", " + country)"""
+
+
+#Experiment: What happens if you try to add a string and an integer in a print statement?
+
+age = 25
+print(f"Age: {age}")
