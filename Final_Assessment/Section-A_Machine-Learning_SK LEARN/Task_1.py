@@ -243,8 +243,7 @@ print( df.sort_values( by="Year" ) )
 
 print("\nCompany Performance Snapshot")
 
-print(
-    df[
+print( df[
         [
             "Company",
             "Launches",
@@ -694,9 +693,7 @@ y = df["Revenue_USD_M"]
 # TRAIN TEST SPLIT
 # Split dataset into training (80%) and testing (20%)
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X,
-    y,
+X_train, X_test, y_train, y_test = train_test_split( X, y,
     test_size=0.20,
     random_state=42
 )
@@ -723,24 +720,13 @@ lr_model.fit(
 lr_prediction = lr_model.predict( X_test )
 
 # Calculate R² Score
-lr_r2 = r2_score(
-    y_test,
-    lr_prediction
-)
+lr_r2 = r2_score( y_test, lr_prediction )
 
 # Calculate Mean Absolute Error
-lr_mae = mean_absolute_error(
-    y_test,
-    lr_prediction
-)
+lr_mae = mean_absolute_error( y_test, lr_prediction)
 
 # Calculate Root Mean Squared Error
-lr_rmse = np.sqrt(
-    mean_squared_error(
-        y_test,
-        lr_prediction
-    )
-)
+lr_rmse = np.sqrt(  mean_squared_error( y_test, lr_prediction ) )
 
 print("\nLinear Regression Results")
 print("R² Score :", lr_r2)
@@ -872,9 +858,7 @@ print(cluster_features.head())
 scaler = StandardScaler()
 
 # Scale all selected features
-cluster_scaled = scaler.fit_transform(
-    cluster_features
-)
+cluster_scaled = scaler.fit_transform( cluster_features )
 
 print("\nFeatures Successfully Scaled")
 
@@ -898,9 +882,7 @@ for k in range(1, 11):
     kmeans.fit(cluster_scaled)
 
     # Store WCSS value
-    wcss.append(
-        kmeans.inertia_
-    )
+    wcss.append( kmeans.inertia_ )
 
 print("\nWCSS Values")
 
@@ -999,16 +981,7 @@ print(kmeans.cluster_centers_)
 
 print("\nCompany and Cluster")
 
-print(
-    df[
-        [
-            "Company",
-            "Cluster"
-        ]
-    ].sort_values(
-        by="Cluster"
-    )
-)
+print( df[ [ "Company", "Cluster" ] ].sort_values( by="Cluster") )
 
 # CLUSTERING INSIGHTS
 
@@ -1081,10 +1054,7 @@ importance_df = pd.DataFrame(
 )
 
 # Sort features by importance
-importance_df = importance_df.sort_values(
-    by="Importance",
-    ascending=False
-)
+importance_df = importance_df.sort_values( by="Importance", ascending=False )
 
 print("\nFeature Importance")
 
