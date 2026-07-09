@@ -1020,10 +1020,6 @@ print(best_model)
 
 
 # REGRESSION
-# I we will predict the Closing Price (Close).
-# SELECT FEATURES AND TARGET
-# Select input features (independent variables).
-
 
 X = df[
     [
@@ -1433,22 +1429,5 @@ print("\nFeature Importance")
 print(feature_importance)
 
 
-# BUSINESS INSIGHTS
-
-print("""
-
-BUSINESS INSIGHTS
-
-• Open and Close prices have a strong relationship.
-
-• High and Low prices move together.
-
-• Trading Volume affects market activity.
-
-• Moving Average and Volatility help identify market trends.
-
-• Random Forest produced the best prediction performance.
-
-""")
 
 
