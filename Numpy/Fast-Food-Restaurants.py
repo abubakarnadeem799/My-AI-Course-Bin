@@ -3,7 +3,7 @@
 import numpy as np
 
 latitude, longitude, postalCode = np.genfromtxt('Data_Sets/Data Science_Assignments/FastFoodRestaurants.csv', delimiter=",", usecols=(4,5,7), unpack=True, dtype=str, skip_header=1,invalid_raise=False,
-    encoding="utf-8" )
+    encoding="utf-8" ) 
 
 
 print(latitude)
